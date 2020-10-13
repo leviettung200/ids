@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext");
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 *,
@@ -391,7 +392,6 @@ body {
 }
 
 .service-box {
-  max-width: 50%;
   padding: 1rem;
   text-align: center;
   color: #eaf0ec;
@@ -427,10 +427,6 @@ body {
   margin-bottom: 1rem;
 }
 
-.service-desc {
-  font-size: 14px;
-}
-
 @media screen and (max-width: 960px) {
   .service-box {
     max-width: 45%;
@@ -447,7 +443,7 @@ body {
   }
 }
 #coverNews {
-  margin: 30px auto;
+  margin-top: 30px;
 }
 
 .title {
@@ -475,7 +471,7 @@ body {
   background: #3D9970;
 }
 .title-more {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #8e9490;
   transition: all 0.2s linear;
 }
@@ -498,6 +494,9 @@ body {
   flex-direction: row;
   margin-bottom: 2rem;
 }
+.new__main {
+  padding-bottom: 2rem;
+}
 .new__main-title a {
   font-size: 1.8rem;
   font-weight: 500;
@@ -514,8 +513,8 @@ body {
   color: #25723e;
 }
 .new__main-image {
-  width: 54rem;
-  height: 28rem;
+  width: 100%;
+  height: 100%;
   display: block;
   overflow: hidden !important;
 }
@@ -530,8 +529,8 @@ body {
   border-radius: 3px;
 }
 .new-image {
-  width: 19rem;
-  height: 13rem;
+  width: 40%;
+  height: 22%;
   overflow: hidden;
 }
 .new-image img {
@@ -571,7 +570,7 @@ body {
   color: #222222;
   margin-bottom: 1.5rem;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -795,13 +794,13 @@ body {
   background: #eaf0ec;
   border: 2px solid #8e9490;
   left: -3px;
-  top: 10px;
+  top: 2px;
 }
 
 .main-timeline .icon:after {
   border: 2px solid #3D9970;
   left: 3px;
-  top: 10px;
+  top: 2px;
 }
 
 .main-timeline .timeline:hover .icon:before {
@@ -909,7 +908,7 @@ body {
 
 .description {
   margin-bottom: 0;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   text-align: justify;
 }
 
@@ -1005,6 +1004,153 @@ body {
     margin-bottom: 10px;
   }
 }
+.pagi {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.pagi-item {
+  margin: 0 1.5rem;
+  font-size: 2rem;
+  color: #8e9490;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.pagi-item.is-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagi-item:hover,
+.pagi-item.is-active {
+  color: #3D9970;
+}
+
+.form-inline {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+.form-inline input {
+  height: 4.5rem;
+  width: 100%;
+  padding-left: 1.5rem;
+  box-sizing: border-box;
+  border: 1px solid #3D9970;
+  border-radius: 3px;
+}
+.form-inline input[type=submit] {
+  color: #3D9970;
+  background: #eaf0ec;
+  font-weight: 600;
+  border: 1px solid #3D9970;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  border-radius: 3px;
+}
+.form-inline input[type=submit]:hover {
+  color: #eaf0ec;
+  background: #3D9970;
+}
+.form-inline textarea {
+  border-radius: 3px;
+  width: 100%;
+  height: 10rem;
+  border: 1px solid #3D9970;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  resize: none;
+}
+
+.mail-phone {
+  display: flex;
+  justify-content: space-between;
+}
+.mail-phone input {
+  width: 48%;
+}
+
+.item {
+  margin-bottom: 3rem;
+}
+.item .gr-cover {
+  position: relative;
+  overflow: hidden;
+}
+
+.content-news {
+  background-color: #fff;
+  padding: 2rem;
+  transition: all 0.4s;
+  background-image: linear-gradient(90deg, #fff 0%, #fff 100%);
+}
+
+.content-news h4 a {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  color: #3D9970;
+  text-align: left;
+  padding-bottom: 2rem;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  display: -webkit-box;
+}
+
+.my-custom-scrollbar {
+  position: relative;
+  height: 30rem;
+  overflow: auto;
+}
+
+.table-wrapper-scroll-y {
+  display: block;
+}
+
+table {
+  font-size: 1.5rem;
+}
+
+.gallery {
+  display: flex;
+  font-size: 1.8rem;
+  border-bottom: 1px solid #8e9490;
+  margin: 3rem 0;
+}
+.gallery li {
+  margin-right: 3rem;
+  font-weight: 500;
+}
+.gallery li.active {
+  border-bottom: 3px solid #25723e;
+}
+.gallery li a {
+  color: #3D9970;
+}
+
+.img-fluid {
+  width: 100%;
+  height: 25rem;
+  padding-bottom: 1.5rem;
+}
+
+.img-top {
+  width: 100%;
+  height: 300px;
+}
+.img-top img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /*
 //complie
 sass scss/style.scss css/style.css --watch
