@@ -425,6 +425,10 @@ body {
   font-size: 1.8rem;
   text-transform: uppercase;
   margin-bottom: 1rem;
+  color: #eaf0ec;
+}
+.service-title:hover {
+  color: #eaf0ec;
 }
 
 @media screen and (max-width: 960px) {
@@ -474,6 +478,7 @@ body {
   font-size: 1.8rem;
   color: #8e9490;
   transition: all 0.2s linear;
+  padding-right: 1rem;
 }
 .title-more i {
   transition: all 0.2s linear;
@@ -481,9 +486,7 @@ body {
 .title-more:hover {
   color: #25723e;
   font-weight: 500;
-}
-.title-more:hover i {
-  padding-left: 1rem;
+  padding-right: 0;
 }
 
 .new {

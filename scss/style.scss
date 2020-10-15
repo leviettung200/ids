@@ -443,6 +443,10 @@ body {
 	font-size: 1.8rem;
 	text-transform: uppercase;
 	margin-bottom: 1rem;
+	color: $color-bg;
+	&:hover {
+		color: $color-bg;
+	}
   }
   
   @media screen and (max-width:960px) {
@@ -495,15 +499,14 @@ body {
 		font-size: 1.8rem;
 		color: $color-text;
 		transition: all .2s linear;
+		padding-right: 1rem;
 		& i{
 			transition: all .2s linear;
 		}
 		&:hover{
 			color: $color-primary;
 			font-weight: 500;
-			& i{
-				padding-left: 1rem;
-			}
+			padding-right: 0;
 		}
 		
 	}
@@ -523,6 +526,7 @@ body {
 				transition: all .3s;
 				&:hover{
 					color: $color-primary;
+					
 
 				}
 			}
