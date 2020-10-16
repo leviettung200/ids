@@ -82,7 +82,7 @@ body {
   background-color: #eaf0ec !important;
   opacity: 1;
   transform: translateY(0);
-  padding: 20px 0;
+  padding: 1rem 0;
   box-shadow: 0 10px 30px 0 rgba(138, 155, 165, 0.15);
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
@@ -90,13 +90,13 @@ body {
 
 .start-header.scroll-on {
   box-shadow: 0 5px 10px 0 rgba(32, 34, 36, 0.15);
-  padding: 10px 0;
+  padding: 5px 0;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 
 .start-header.scroll-on .navbar-brand img {
-  height: 24px;
+  height: 3rem;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
@@ -116,10 +116,9 @@ body {
 }
 
 .navbar-brand img {
-  height: 2.8rem;
+  height: 7rem;
   width: auto;
   display: block;
-  filter: brightness(10%);
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
@@ -395,7 +394,6 @@ body {
   padding: 1rem;
   text-align: center;
   color: #eaf0ec;
-  cursor: pointer;
 }
 
 .service-icon {
@@ -478,15 +476,17 @@ body {
   font-size: 1.8rem;
   color: #8e9490;
   transition: all 0.2s linear;
-  padding-right: 1rem;
 }
 .title-more i {
   transition: all 0.2s linear;
+  opacity: 0;
 }
 .title-more:hover {
   color: #25723e;
   font-weight: 500;
-  padding-right: 0;
+}
+.title-more:hover i {
+  opacity: 1;
 }
 
 .new {
