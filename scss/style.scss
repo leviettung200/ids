@@ -720,6 +720,7 @@ body {
 		font-size: 1.6rem;
 		& a{
 			color: $color-bg;
+			
 		}
 	}
 }
@@ -1039,6 +1040,11 @@ body {
 	}
 	
 // /////////////////////Contact Page
+.box p> a {
+	color: $color-text;
+}
+
+
 // #form-contacts{
 // }
 .form-inline{
